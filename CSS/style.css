@@ -347,6 +347,10 @@ footer {
   .contact-list a {
     padding: 5px;
   }
+
+  .education {
+    background-position: top left;
+  }
 }
 
 @media (min-width: 555px) {
