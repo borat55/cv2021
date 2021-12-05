@@ -35,17 +35,25 @@ window.addEventListener("resize", () => {
 
 abtMyself.addEventListener("click", () => {
     viewAbtMyself.scrollIntoView({behavior:"smooth"})
+    menu.style.display = "none"
+    icons.style.display = "none"
 })
 
 project.addEventListener("click",() => {
     viewProject.scrollIntoView({behavior:"smooth"})
+    menu.style.display = "none"
+    icons.style.display = "none"
 })
 
 experience.addEventListener("click",() => {
     viewExperience.scrollIntoView({behavior:"smooth"})
+    menu.style.display = "none"
+    icons.style.display = "none"
 })
 
 education.addEventListener("click",() => {
     viewEducation.scrollIntoView({behavior:"smooth"})
+    menu.style.display = "none"
+    icons.style.display = "none"
 })
 
