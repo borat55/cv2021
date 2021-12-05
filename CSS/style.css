@@ -22,6 +22,7 @@ body {
 
 img {
   width: 300px;
+  border-radius: 5px;
 }
 
 a {
@@ -281,6 +282,7 @@ footer {
 
   .nav-logo {
     padding-left: 0 0 0 20px;
+    font-size: 30px;
   }
 
   .nav-manu {
@@ -294,16 +296,23 @@ footer {
   .nav-manu li {
     width: 100%;
     text-align: center;
+    font-size: 20px;
   }
 
   .nav-icons {
     display: none;
     justify-content: center;
     width: 100%;
+    font-size: 20px;
   }
 
   .nav_menuBtn {
     display: block;
+    font-size: 20px;
+  }
+
+  .projects .btn {
+    font-size: 14px;
   }
 }
 
