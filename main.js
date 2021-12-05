@@ -37,8 +37,11 @@ window.addEventListener("resize", () => {
     }
 })
 
-
 abtMyself.addEventListener("click", () => {
+    viewAbtMyself.scrollIntoView({behavior:"smooth"})
+})
+
+abtMyself.addEventListener("touchstart", () => {
     viewAbtMyself.scrollIntoView({behavior:"smooth"})
 })
 
@@ -46,7 +49,15 @@ project.addEventListener("click",() => {
     viewProject.scrollIntoView({behavior:"smooth"})
 })
 
+project.addEventListener("touchstart",() => {
+    viewProject.scrollIntoView({behavior:"smooth"})
+})
+
 experience.addEventListener("click",() => {
+    viewExperience.scrollIntoView({behavior:"smooth"})
+})
+
+experience.addEventListener("touchstart",() => {
     viewExperience.scrollIntoView({behavior:"smooth"})
 })
 
@@ -54,3 +65,6 @@ education.addEventListener("click",() => {
     viewEducation.scrollIntoView({behavior:"smooth"})
 })
 
+education.addEventListener("touchstart",() => {
+    viewEducation.scrollIntoView({behavior:"smooth"})
+})
