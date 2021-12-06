@@ -152,6 +152,10 @@ header {
   text-align: right;
 }
 
+.abtMe {
+  font-style: italic;
+}
+
 .projects .btn {
   color: #3c041d;
   background: #f8bbd0;
