@@ -101,6 +101,10 @@ header {
   line-height: 1;
 }
 
+.nav-logo i {
+  font-size: 32px;
+}
+
 .nav-manu,
 .nav-icons {
   list-style: none;
@@ -119,7 +123,7 @@ header {
   color: #080940;
 }
 
-.nav-manu li:hover {
+.nav-manu li :hover {
   background-color: #caf0f8;
   border-radius: 5px;
 }
@@ -289,6 +293,10 @@ footer {
     font-size: 30px;
   }
 
+  .nav-logo i {
+    font-size: 24px;
+  }
+
   .nav-manu {
     display: none;
     flex-direction: column;
@@ -371,5 +379,28 @@ footer {
 
   h2 {
     font-size: 35px;
+  }
+}
+@media (max-width: 230px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .nav-logo {
+    font-size: 25px;
+  }
+  .nav-logo i {
+    font-size: 20px;
+  }
+  .nav_menuBtn {
+    font-size: 17px;
+  }
+  .nav-manu li {
+    font-size: 20px;
+  }
+  .nav-icons i {
+    font-size: 25px;
   }
 }
