@@ -26,7 +26,7 @@ navBar.addEventListener("mouseleave", () => {
   }
 });
 
-document.addEventListener("touchend", () => {
+document.addEventListener("touchstart", () => {
   if (menu.style.display === "block" && icons.style.display === "flex") {
     menu.style.display = "none";
     icons.style.display = "none";
