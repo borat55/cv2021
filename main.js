@@ -26,6 +26,13 @@ navBar.addEventListener("mouseleave", () => {
   }
 });
 
+document.addEventListener("touchend", () => {
+  if (menu.style.display === "block" && icons.style.display === "flex") {
+    menu.style.display = "none";
+    icons.style.display = "none";
+  }
+});
+
 menu.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
     icons.style.display = "none";
