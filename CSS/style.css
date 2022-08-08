@@ -108,9 +108,16 @@ header {
 .nav-manu,
 .nav-icons {
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: row;
   padding-left: 0;
+}
+
+.nav-manu.active {
+  display: "block";
+}
+.nav-icons.active {
+  display: "flex";
 }
 
 .nav-manu li {

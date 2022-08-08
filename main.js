@@ -18,12 +18,19 @@ menuBtn.addEventListener("mouseenter", () => {
     icons.style.display = "flex";
   }
 });
+
+menuBtn.addEventListener("touchend", () => {
+  menu.classList.toggle("active");
+  icons.classList.toggle("active");
+});
+
 navBar.addEventListener("mouseleave", () => {
   if (window.innerWidth <= 1080) {
     menu.style.display = "none";
     icons.style.display = "none";
   }
 });
+
 menu.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
     icons.style.display = "none";
