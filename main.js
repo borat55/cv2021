@@ -12,18 +12,20 @@ const education = document.querySelector(".nav-manu li:last-child");
 const viewEducation = document.querySelector(".education");
 const HamburgerIcon = document.querySelector(".nav_menuBtn");
 
-menuBtn.addEventListener("mouseenter", () => {
+menuBtn.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
     menu.style.display = "block";
     icons.style.display = "flex";
   }
 });
+
 navBar.addEventListener("mouseleave", () => {
   if (window.innerWidth <= 1080) {
     menu.style.display = "none";
     icons.style.display = "none";
   }
 });
+
 menu.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
     icons.style.display = "none";
