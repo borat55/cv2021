@@ -54,7 +54,7 @@ abtMyself.addEventListener("click", () => {
   viewAbtMyself.scrollIntoView({ behavior: "smooth" });
 });
 
-abtMyself.addEventListener("touchstart", () => {
+abtMyself.addEventListener("touchend", () => {
   viewAbtMyself.scrollIntoView({ behavior: "smooth" });
 });
 
@@ -62,7 +62,7 @@ project.addEventListener("click", () => {
   viewProject.scrollIntoView({ behavior: "smooth" });
 });
 
-project.addEventListener("touchstart", () => {
+project.addEventListener("touchend", () => {
   viewProject.scrollIntoView({ behavior: "smooth" });
 });
 
@@ -70,7 +70,7 @@ experience.addEventListener("click", () => {
   viewExperience.scrollIntoView({ behavior: "smooth" });
 });
 
-experience.addEventListener("touchstart", () => {
+experience.addEventListener("touchend", () => {
   viewExperience.scrollIntoView({ behavior: "smooth" });
 });
 
@@ -78,6 +78,6 @@ education.addEventListener("click", () => {
   viewEducation.scrollIntoView({ behavior: "smooth" });
 });
 
-education.addEventListener("touchstart", () => {
+education.addEventListener("touchend", () => {
   viewEducation.scrollIntoView({ behavior: "smooth" });
 });
