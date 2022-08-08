@@ -38,6 +38,11 @@ menu.addEventListener("touchend", () => {
   icons.style.display = "none";
 });
 
+window.addEventListener("touchend", () => {
+  menu.style.display = "none";
+  icons.style.display = "none";
+});
+
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 1081) {
     menu.style.display = "flex";
