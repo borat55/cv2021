@@ -46,6 +46,7 @@ h2 {
 
 h1,
 h2 {
+  padding-top: 20px;
   font-weight: 400;
 }
 
@@ -130,9 +131,8 @@ header {
   color: #080940;
 }
 
-.nav-manu li :hover {
-  background-color: #caf0f8;
-  border-radius: 5px;
+.navigation-bar ul li :hover {
+  color: #caf0f8;
 }
 
 .nav-icons i {
@@ -289,7 +289,7 @@ footer {
 /* responsive style
 ----------------------------------------------- */
 
-@media screen and (max-width: 1004px) {
+@media screen and (max-width: 1080px) {
   .navigation-bar {
     flex-direction: column;
     align-items: flex-start;
