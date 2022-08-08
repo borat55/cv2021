@@ -12,16 +12,11 @@ const education = document.querySelector(".nav-manu li:last-child");
 const viewEducation = document.querySelector(".education");
 const HamburgerIcon = document.querySelector(".nav_menuBtn");
 
-menuBtn.addEventListener("mouseenter", () => {
+menuBtn.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
     menu.style.display = "block";
     icons.style.display = "flex";
   }
-});
-
-menuBtn.addEventListener("touchend", () => {
-  menu.classList.toggle("active");
-  icons.classList.toggle("active");
 });
 
 navBar.addEventListener("mouseleave", () => {
