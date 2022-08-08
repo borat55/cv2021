@@ -109,7 +109,8 @@ header {
 .nav-manu,
 .nav-icons {
   list-style: none;
-  display: none;
+  display: flex;
+  overflow: hidden;
   flex-direction: row;
   padding-left: 0;
 }
