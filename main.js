@@ -38,17 +38,18 @@ menu.addEventListener("touchstart", () => {
   icons.style.display = "none";
 });
 
+document.addEventListener("touchend", () => {
+  if (menu.style.display === "block" && icons.style.display === "flex") {
+    menu.style.display = "none";
+    icons.style.display = "none";
+  }
+  return;
+});
+
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 1081) {
     menu.style.display = "flex";
     icons.style.display = "flex";
-  }
-});
-
-document.addEventListener("touchstart", () => {
-  if (menu.style.display === "block" && icons.style.display === "flex") {
-    menu.style.display = "none";
-    icons.style.display = "none";
   }
 });
 
