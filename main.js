@@ -11,6 +11,7 @@ const viewExperience = document.querySelector(".work-experience");
 const education = document.querySelector(".nav-manu li:last-child");
 const viewEducation = document.querySelector(".education");
 const HamburgerIcon = document.querySelector(".nav_menuBtn");
+const main = document.querySelector("main");
 
 menuBtn.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
@@ -38,7 +39,7 @@ menu.addEventListener("touchstart", () => {
   icons.style.display = "none";
 });
 
-document.addEventListener("touchend", () => {
+main.addEventListener("touchend", () => {
   if (menu.style.display === "block" && icons.style.display === "flex") {
     menu.style.display = "none";
     icons.style.display = "none";
