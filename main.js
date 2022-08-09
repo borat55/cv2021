@@ -34,13 +34,16 @@ menu.addEventListener("click", () => {
 });
 
 menu.addEventListener("touchstart", () => {
+  menu.style.display = "none";
+  icons.style.display = "none";
+});
+
+document.addEventListener("touchend", () => {
   if (menu.style.display === "block" && icons.style.display === "flex") {
     menu.style.display = "none";
     icons.style.display = "none";
-  } else {
-    menu.style.display = "none";
-    icons.style.display = "none";
   }
+  return;
 });
 
 window.addEventListener("resize", () => {
