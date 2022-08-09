@@ -26,13 +26,6 @@ navBar.addEventListener("mouseleave", () => {
   }
 });
 
-document.addEventListener("touchstart", () => {
-  if (menu.style.display === "block" && icons.style.display === "flex") {
-    menu.style.display = "none";
-    icons.style.display = "none";
-  }
-});
-
 menu.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
     icons.style.display = "none";
@@ -40,14 +33,14 @@ menu.addEventListener("click", () => {
   }
 });
 
-menu.addEventListener("touchend", () => {
-  menu.style.display = "none";
-  icons.style.display = "none";
-});
-
-window.addEventListener("touchend", () => {
-  menu.style.display = "none";
-  icons.style.display = "none";
+menu.addEventListener("touchstart", () => {
+  if (menu.style.display === "block" && icons.style.display === "flex") {
+    menu.style.display = "none";
+    icons.style.display = "none";
+  } else {
+    menu.style.display = "none";
+    icons.style.display = "none";
+  }
 });
 
 window.addEventListener("resize", () => {
@@ -61,7 +54,7 @@ abtMyself.addEventListener("click", () => {
   viewAbtMyself.scrollIntoView({ behavior: "smooth" });
 });
 
-abtMyself.addEventListener("touchend", () => {
+abtMyself.addEventListener("touchstart", () => {
   viewAbtMyself.scrollIntoView({ behavior: "smooth" });
 });
 
@@ -69,7 +62,7 @@ project.addEventListener("click", () => {
   viewProject.scrollIntoView({ behavior: "smooth" });
 });
 
-project.addEventListener("touchend", () => {
+project.addEventListener("touchstart", () => {
   viewProject.scrollIntoView({ behavior: "smooth" });
 });
 
@@ -77,7 +70,7 @@ experience.addEventListener("click", () => {
   viewExperience.scrollIntoView({ behavior: "smooth" });
 });
 
-experience.addEventListener("touchend", () => {
+experience.addEventListener("touchstart", () => {
   viewExperience.scrollIntoView({ behavior: "smooth" });
 });
 
@@ -85,6 +78,6 @@ education.addEventListener("click", () => {
   viewEducation.scrollIntoView({ behavior: "smooth" });
 });
 
-education.addEventListener("touchend", () => {
+education.addEventListener("touchstart", () => {
   viewEducation.scrollIntoView({ behavior: "smooth" });
 });
