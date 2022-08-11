@@ -195,13 +195,12 @@ header {
 .btn-with-link {
   color: #f8bbd0;
   text-decoration: none;
-  border-radius: 10px;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
   text-decoration: underline;
 }
 
 .btn-with-link:hover {
-  color: #f7f725;
+  color: #ce93d8;
 }
 
 .project-item {
