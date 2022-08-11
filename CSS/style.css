@@ -35,7 +35,7 @@ a:hover {
 
 h1 {
   font-size: 100px;
-  line-height: 1;
+  margin: 50px 0 25px 0;
 }
 
 h2 {
@@ -156,9 +156,25 @@ header {
   text-align: right;
 }
 
-.abtMe {
-  font-style: italic;
+.introMyself {
+  margin: 67px 0 70px 0;
 }
+
+.introMyself img {
+  margin: 0 30px 30px 0;
+}
+
+.introMyself-text {
+  overflow: hidden;
+}
+
+.introMyself-text h2 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Project
+----------------------------------------------- */
 
 .projects .btn {
   color: #3c041d;
@@ -177,23 +193,21 @@ header {
 }
 
 .btn-with-link {
-  color: #3c041d;
-  background: #f8bbd0;
+  color: #f8bbd0;
   text-decoration: none;
-  padding: 6px 8px;
   border-radius: 10px;
-  display: inline-block;
-  transition: background 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+  text-decoration: underline;
+}
+
+.btn-with-link:hover {
+  color: #f7f725;
 }
 
 .project-item {
   overflow: hidden;
   border-bottom: 1px dashed #245cbe;
   padding: 25px 0;
-}
-
-.project-item h3 {
-  margin-top: 0;
 }
 
 .project-item-text {
@@ -214,12 +228,14 @@ header {
 .css-icon {
   width: 100px;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .js-icon {
   width: 130px;
   border: 5px solid #323330;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 /* Work Experience
@@ -275,14 +291,10 @@ footer {
   padding-left: 0;
 }
 
-.contact-list li:first-child a {
-  pointer-events: none;
-}
-
 /* responsive style
 ----------------------------------------------- */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1130px) {
   .navigation-bar {
     flex-direction: column;
     align-items: flex-start;
@@ -334,6 +346,11 @@ footer {
     margin-right: 30px;
   }
 
+  .introMyself img {
+    float: left;
+    margin-right: 30px;
+  }
+
   .job-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -356,6 +373,10 @@ footer {
     line-height: 1;
   }
 
+  .introMyself-text {
+    display: inline-block;
+  }
+
   .contact-list a {
     padding: 5px;
   }
@@ -366,7 +387,6 @@ footer {
 }
 
 @media (min-width: 555px) {
-  header,
   footer {
     text-align: center;
   }
@@ -381,6 +401,7 @@ footer {
     font-size: 35px;
   }
 }
+
 @media (max-width: 230px) {
   h1 {
     font-size: 40px;
