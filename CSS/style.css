@@ -22,7 +22,7 @@ body {
 
 img {
   width: 300px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 a {
@@ -171,6 +171,12 @@ header {
 
 /* Project
 ----------------------------------------------- */
+
+img {
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
 
 .projects .btn {
   color: #3c041d;
