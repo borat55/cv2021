@@ -20,11 +20,6 @@ body {
   line-height: 1.5;
 }
 
-img {
-  width: 300px;
-  border-radius: 10px;
-}
-
 a {
   color: #a0f09c;
 }
@@ -160,6 +155,13 @@ header {
   margin: 67px 0 70px 0;
 }
 
+.introMyself img {
+  width: 300px;
+  border-radius: 5px;
+  object-fit: contain;
+  max-height: 100%;
+}
+
 .introMyself-text {
   overflow: hidden;
 }
@@ -172,10 +174,22 @@ header {
 /* Project
 ----------------------------------------------- */
 
-img {
+#border-radius {
+  background-color: black;
+  border-radius: 5px;
+}
+
+.img-box {
+  display: inline-block;
   height: 300px;
+  width: 300px;
+}
+
+.img-box img {
+  width: 300px;
+  border-radius: 5px;
   object-fit: contain;
-  border-radius: 10px;
+  max-height: 100%;
 }
 
 .projects .btn {
@@ -372,13 +386,14 @@ footer {
 }
 
 @media screen and (min-width: 750px) {
-  .project-item img,
+  .img-box,
   .introMyself img {
     float: left;
     margin-right: 30px;
   }
 
-  .introMyself {
+  .introMyself,
+  .img-box {
     display: flex;
     align-items: center;
   }
