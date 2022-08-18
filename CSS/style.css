@@ -236,51 +236,15 @@ header {
   justify-content: start;
   flex-wrap: wrap;
 }
-
-.html-icon {
-  padding: 2px 0;
-  background-color: #e34f26;
-}
-
 .html-icon,
-.css-icon {
-  width: 100px;
-  height: 34px;
-  border-radius: 10px;
-  margin: 0 10px 15px 0;
-}
-
+.css-icon,
 .js-icon,
 .nodejs-icon,
 .pug-icon,
 .webpack-icon,
 .mongoDB-icon {
-  height: 34px;
   margin: 0 10px 15px 0;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.js-icon {
-  width: 120px;
-  border: 6px solid #323330;
-}
-
-.nodejs-icon {
-  width: 115px;
-}
-
-.pug-icon {
-  width: 95px;
-}
-
-.webpack-icon {
-  width: 110px;
-}
-
-.mongoDB-icon {
-  width: 120px;
-  border: 3px solid #4ea94b;
+  border-radius: 5px;
 }
 
 /* Work Experience
