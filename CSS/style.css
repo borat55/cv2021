@@ -237,13 +237,7 @@ header {
   flex-wrap: wrap;
 }
 
-.html-icon,
-.css-icon,
-.js-icon,
-.nodejs-icon,
-.pug-icon,
-.webpack-icon,
-.mongoDB-icon {
+.badge {
   margin: 0 10px 15px 0;
   border-radius: 5px;
 }
