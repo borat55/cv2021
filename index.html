@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curious Boram</title>
     <link rel="stylesheet" href="./CSS/style.css" />
+    
     <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
+      src="https://kit.fontawesome.com/06ad75dee2.js"
       crossorigin="anonymous"
       defer
     ></script>
@@ -26,8 +27,8 @@
         <li><a>Education</a></li>
       </ul>
       <ul class="nav-icons">
-        <li>
-          <a href="mailto:boram8655@gmail.com" target="_blank">
+        <li >
+          <a disabled="disabled"  id="copyEmailId">
             <i class="fas fa-envelope"></i>
           </a>
         </li>
@@ -55,27 +56,29 @@
       <header>
         <div class="content-wrap">
           <h1>Boram Kim</h1>
+          <h2>Front-End Developer</h2>
           <div class="introMyself">
             <img
               src="images/IMG_4882.JPG"
               alt="Jumping in the salt desert in Uyuni"
             />
             <div class="introMyself-text">
-              <h2>Front-End Developer</h2>
+              
               <p class="abtMe">
-                I have knowledges in HTML, CSS, JavaScript, ReactJS, TypeScript,
-                NodeJS(express, pug), mongoDB. I picked up these skills learning
-                by courses in internet.
+                
               </p>
 
-              <h3>Who is Boram Kim?</h3>
+              <h2>Who is Boram Kim?</h2>
               <p class="abtMe">
-                I am a lot of things. I am a yogini, dessert baker, food lover,
-                wire crafter, world traveler, and a coder. I am thrilled that
-                coding is now a part of my life and became one of my favorites.
-                I feel amazed that I can build anything by coding.<br />
-                My current goal is to take my first step in the world of
-                programming.<br />
+                I am a former account manager and a researcher turned into a front-end developer. 
+                My Journey started with a curiosity of an activity encouraged by my former job, 
+                and along the way, I found a deep interest and excitement in studying JavaScript.
+                <br />
+                I feel amazed that I can build anything by coding.
+                I'm excited to work alongside other amazing programmers and expand my skills and knowledge in the field!
+                For this, my current goal is to take my first step in the world of
+                programming.
+                <br />
               </p>
               </p>
             </div>
@@ -154,9 +157,9 @@
             <div class="project-item-text">
               <h3>Coin Tracker</h3>
               <p>
-                It shows the information of cryptocurrency. If you click a name
-                of the cryptocurrency, the page will show you all about the
-                cryptocurrency, by explaining about the coin, and comparing the
+                It shows the information of cryptocurrency. If a name
+                of the cryptocurrency is clicked, the page will be shown all about the
+                cryptocurrency by explaining about the coin, comparing the
                 price of coin, and visualizing the price per each time or day in
                 line chart/candle stick chart. It fetches data from
                 cryptocurrency API by using React Query, and presents the
@@ -216,12 +219,13 @@
               <p>
                 Chrome App that has a to-do list, date/time, weather forecast
                 and quote for the day. In the to-do list, there are 3
-                categories; to-do, doing, done. You can move a to-do to other
-                categories from to-do(default) according to the status of the
-                to-do. For the weather forecast, if you put a name of city
-                correctly, it shows you the weather information of the city. I
-                used React Hook Form to validate forms, and Recoil to change /
-                manage the status of components.
+                categories; to-do, doing, done. A to-do item can be mosed to other
+                categories from the default value, to-do, according to the status of the
+                to-do item. For the weather forecast, if a name of city is entered 
+                correctly, it shows the weather information of the city. For the Todo list, 
+                React Hook Form is used to validate forms, and Recoil to change /
+                manage the status of components. The weather information is pulled from Openweathermap,
+                quote is receiving from Adviceslip.
               </p>
               <div class="lang-icons">
                 <img
@@ -263,51 +267,51 @@
             <div class="img-box">
               <img
                 src="./images/wetube_img.jpg"
-                alt="Youtube Clone, Wetube web captured img"
+                alt="Netflex Clone, Netflex web captured img"
               />
             </div>
             <div class="project-item-text">
-              <h3>Youtube Clone</h3>
+              <h3>Netflex Clone</h3>
               <p>
-                Youtube Clone built using NodeJS, Express, Pug, SCSS, MongoDB
-                and ES6.<br />
-                It contains 7pages; home, view video, edit video, search, upload
-                video, edit profile, my profile, join, login. Also it has
-                add/delete comment on the video, delete video, recording videos,
-                taking thumbnail img, logout and github login functions.
+                A clone website of Netflix, providing a similar user experience and functionality.
+                It allows users to browse and discover information on movies and TV shows, just like the original Netflix platform.
+                The application utilizes data pulled from the Movie Database (TMDB) API to populate its content.<br />
+                - Information on movies/tv series pulled from Movie Database(TMDB) API<br />
+                - Users can easily search for specific movies or TV shows and explore various categories such as Now Playing, Popular, Top Rated<br />
+                - Incorporated engaging animations and interactive features like sliders and modals using Framer Motion<br />
               </p>
               <div class="lang-icons">
                 <img
-                  class="pug-icon badge"
-                  src="https://img.shields.io/badge/Pug-FFF?style=for-the-badge&logo=pug&logoColor=A86454"
+                  class="react-icon badge"
+                  src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
                 />
                 <img
-                  class="js-icon badge"
-                  src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                class="reactQuery-icon badge"
+                src="https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white"
+              />
+                <img
+                  class="styledComponents-icon badge"
+                  src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
                 />
                 <img
-                  class="nodejs-icon badge"
-                  src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+                  class="typescript-icon badge"
+                  src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
                 />
                 <img
-                  class="webpack-icon badge"
-                  src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black"
-                />
-                <img
-                  class="mongoDB-icon badge"
-                  src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+                  class="reactHookForm-icon badge"
+                  src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white"
                 />
               </div>
               <div class="button-box">
                 <a
                   class="btn"
-                  href="https://wetube-br.herokuapp.com/"
+                  href=""
                   target="_blank"
                   >View project</a
                 >
                 <a
                   class="btn"
-                  href="https://github.com/borat55/wetube"
+                  href="https://github.com/borat55/react-netflex"
                   target="_blank"
                   >View code</a
                 >
@@ -432,9 +436,9 @@
 
           <ul class="contact-list">
             <li>
-              <a href="mailto:boram8655@gmail.com" target="_blank"
-                >boram8655@gmail.com</a
-              >
+              <a disabled="disabled"  id="copyEmailId">
+                Email</i>
+              </a>
             </li>
             <li>
               <a href="https://github.com/borat55" target="_blank">GIthub</a>

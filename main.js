@@ -12,6 +12,7 @@ const education = document.querySelector(".nav-manu li:last-child");
 const viewEducation = document.querySelector(".education");
 const HamburgerIcon = document.querySelector(".nav_menuBtn");
 const main = document.querySelector("main");
+const emailCopy = document.getElementById("copyEmailId");
 
 menuBtn.addEventListener("click", () => {
   if (window.innerWidth <= 1080) {
@@ -84,4 +85,13 @@ education.addEventListener("click", () => {
 
 education.addEventListener("touchstart", () => {
   viewEducation.scrollIntoView({ behavior: "smooth" });
+});
+
+emailCopy.addEventListener("click", () => {
+  // const range = document.createRange();
+  // window.getSelection().addRange(range);
+  // document.execCommand("copy");
+  window.navigator.clipboard.writeText("boram8655@gmail.com").then(() => {
+    alert("My email address has been copied!");
+  });
 });
